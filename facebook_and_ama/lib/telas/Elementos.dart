@@ -8,11 +8,12 @@ class ElementosPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 20,left: 16,),
+        padding: const EdgeInsets.only(
+          top: 20,
+          left: 16,
+        ),
         child: Column(
-         children: [
-           ParteCima()
-         ],
+          children: [ParteCima()],
         ),
       ),
     );
@@ -32,9 +33,15 @@ class ParteCima extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Facebook",style: TextStyle(color:Colors.blue,fontWeight: FontWeight.bold,fontSize:20,),),
-              
-              SizedBox(width:MediaQuery.of(context).size.width -288), 
+              Text(
+                "Facebook",
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
+              SizedBox(width: MediaQuery.of(context).size.width - 288),
               Row(
                 children: [
                   Container(
@@ -47,8 +54,7 @@ class ParteCima extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18),
                       ),
-                    ), 
-
+                    ),
                   ),
                   Container(
                     width: 60,
@@ -60,31 +66,85 @@ class ParteCima extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18),
                       ),
-                    ),                        
+                    ),
                   ),
-
                 ],
-                
               ),
             ],
-          
           ),
-          SizedBox(
-            height:4
-          ),
-          Row(children: [
-            Container(
-              height: 1,
-              width: MediaQuery.of(context).size.width -16,
-              color: Colors.grey.shade200,
-              child: Image.asset("name")
+          SizedBox(height: 4),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    height: 1,
+                    width: MediaQuery.of(context).size.width - 16,
+                    color: Colors.grey.shade200,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(50),
+                    child: Image.asset(
+                      "imgs/bma2.png",
+                      width: 80,
+                      height: 80,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Text("Em que  estás a Pensar")
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 2,
+                    width: MediaQuery.of(context).size.width - 16,
+                    color: Colors.grey.shade200,
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.ac_unit),
+                  Text("Direto     |  "),
+                  SizedBox(width: 30,),
+                  Icon(Icons.photo_album),
+                  Text("Foto  |"),
+                  SizedBox(width: 30,),
+                  Icon(Icons.camera),
+                  Text("Sala  |"),
+                  
 
-            )
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 10,
+                    width: MediaQuery.of(context).size.width - 16,
+                    color: Colors.grey.shade300,
 
-          ],)
+                  )
+                ],
+              )
+            ],
+          )
         ],
       ),
-
     );
   }
 }
