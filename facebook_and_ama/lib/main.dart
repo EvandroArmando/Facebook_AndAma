@@ -1,3 +1,4 @@
+import 'package:facebook_and_ama/telas/post_widget.dart';
 import 'package:facebook_and_ama/telas/principal.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PrincipalPage(),
+      home: PostesPage(),
     );
   }
 }

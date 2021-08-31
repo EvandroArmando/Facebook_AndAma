@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ElementosPage extends StatelessWidget {
@@ -38,7 +37,7 @@ class ParteCima extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
-                  fontSize: 20,
+                  fontSize: 30,
                 ),
               ),
               SizedBox(width: MediaQuery.of(context).size.width - 288),
@@ -48,7 +47,7 @@ class ParteCima extends StatelessWidget {
                     width: 60,
                     height: 40,
                     child: Card(
-                      child: Icon(Icons.ac_unit_outlined),
+                      child: Icon(Icons.ac_unit),
                       color: Colors.grey.shade200,
                       elevation: 12,
                       shape: RoundedRectangleBorder(
@@ -70,6 +69,7 @@ class ParteCima extends StatelessWidget {
                   ),
                 ],
               ),
+              
             ],
           ),
           SizedBox(height: 4),
@@ -93,9 +93,9 @@ class ParteCima extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(50),
                     child: Image.asset(
-                      "imgs/bma2.png",
-                      width: 80,
-                      height: 80,
+                      "imgs/prof.jpeg",
+                      width: 100,
+                      height: 100,
                     ),
                   ),
                   SizedBox(
@@ -119,13 +119,17 @@ class ParteCima extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.ac_unit),
+                  Icon(Icons.video_call),
                   Text("Direto     |  "),
                   SizedBox(width: 30,),
-                  Icon(Icons.photo_album),
+                  Icon(Icons.photo_library,color: Colors.green,),
                   Text("Foto  |"),
                   SizedBox(width: 30,),
-                  Icon(Icons.camera),
+                  Icon(Icons.videocam,
+                  color: Colors.red,
+
+                  
+                  ),
                   Text("Sala  |"),
                   
 

@@ -1,5 +1,4 @@
 
-import 'dart:html';
 
 import 'package:facebook_and_ama/telas/Elementos.dart';
 import 'package:facebook_and_ama/telas/segundoElemento.dart';
@@ -26,7 +25,7 @@ class PrincipalPage extends StatelessWidget {
               Container(
                 alignment: Alignment.topLeft,
                 width: MediaQuery.of(context).size.width - 32,
-                height: 50,
+                height: 30,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 1,
@@ -118,11 +117,70 @@ class PrincipalPage extends StatelessWidget {
               ),
               Container(
                 width: MediaQuery.of(context).size.width -16,
-                height: 150,
+                height: 180,
                 child: ListView.builder(
+                  itemCount: 1,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    return cartoesEstados();
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          cartoesEstados("imgs/bma2.png"),
+                          espaco(),
+                          cartoesEstados("imgs/sophia.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/story5.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/story2.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/olivia.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/sophia.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/olivia.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/story5.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/bma2.png"),
+                          espaco(),
+                          cartoesEstados("imgs/story5.jpg"),
+                           espaco(),
+                          cartoesEstados("imgs/story2.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/olivia.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/sophia.jpg"),
+                          cartoesEstados("imgs/bma2.png"),
+                          espaco(),
+                          cartoesEstados("imgs/sophia.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/story5.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/story2.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/olivia.jpg"),
+                          espaco(),     
+                          cartoesEstados("imgs/bma2.png"),
+                          espaco(),
+                          cartoesEstados("imgs/sophia.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/story5.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/story2.jpg"),
+                          espaco(),
+                          cartoesEstados("imgs/olivia.jpg"),
+                          espaco(),                    
+
+
+
+
+
+
+                        ],
+                      ),
+
+                    );
                   },
                 ),
               ),
@@ -152,14 +210,6 @@ class PrincipalPage extends StatelessWidget {
                   ),
                 ),
               ),
-              teste(context),
-              teste(context),
-              teste(context),
-              teste(context),
-              teste(context),
-              teste(context),
-              teste(context),
-              teste(context),
               
                  
             ],
@@ -203,7 +253,7 @@ class PrincipalPage extends StatelessWidget {
               icon: Column(
                 children: [
                   Icon(
-                    Icons.family_restroom,
+                    Icons.people,
                     color: Colors.black,
                   ),
                   Text("Historico")
@@ -215,7 +265,7 @@ class PrincipalPage extends StatelessWidget {
               icon: Column(
                 children: [
                   Icon(
-                    Icons.,
+                    Icons.ac_unit,
                     color: Colors.black,
                   ),
                   Text("Em espera")
@@ -275,19 +325,15 @@ class PrincipalPage extends StatelessWidget {
   );
   }
 
-  Container cartoesEstados() {
+  Container cartoesEstados(String imagem) {
     return Container(
       width: 90,
-      height: 120,
-      child: Card(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        elevation: 6,
-        color: Colors.white,
-        child: Center(
-            child: Text(
-          " imagem",
-        )),
-      ),
+      height: 140,
+      decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage(imagem), fit: BoxFit.cover),
+              borderRadius: BorderRadius.circular(10.0)
+            ),
+      
     );
   }
 

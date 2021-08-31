@@ -17,7 +17,7 @@ class SegundoElementoPage extends StatelessWidget {
               height: 10,
             ),
             Container(
-              height: 120,
+              height: 340,
               width: MediaQuery.of(context).size.width -16,
               child: ListView.builder(
                 itemCount: 1,
@@ -379,9 +379,10 @@ class Bolinhas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.blue.shade100,
+        image: DecorationImage(image: AssetImage('imgs/story5.jpg'), fit: BoxFit.cover),
       ),
       alignment: Alignment.center,
       height: 30,
@@ -399,12 +400,12 @@ class CriarSala extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: Colors.blue.shade300,
         borderRadius: BorderRadius.circular(10),
-        color: Colors.blue.shade100,
       ),
       alignment: Alignment.center,
       height: 30,
-      width: 90,
+      width: 80,
       child: Text("Criar sala"),
     );
   }
