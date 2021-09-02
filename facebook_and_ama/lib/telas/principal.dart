@@ -214,7 +214,7 @@ class PrincipalPage extends StatelessWidget {
                         Column(
                           children: [ 
                               
-                                Container(child: Topo(imagem: "imgs/prof.jpeg", perfil: "Adelina Armando", hora: "12h")),
+                                Container(child: Topo(imagem: "imgs/prof.jpeg", perfil: "José Caseiro", hora: "12h")),
                                 SizedBox(height:5),
                                 
                                 Container(
