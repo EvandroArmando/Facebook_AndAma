@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ElementosPage extends StatelessWidget {
   const ElementosPage({Key? key}) : super(key: key);
@@ -47,7 +48,7 @@ class ParteCima extends StatelessWidget {
                     width: 60,
                     height: 40,
                     child: Card(
-                      child: Icon(Icons.ac_unit),
+                      child: Icon(Icons.search),
                       color: Colors.grey.shade200,
                       elevation: 12,
                       shape: RoundedRectangleBorder(
@@ -59,7 +60,7 @@ class ParteCima extends StatelessWidget {
                     width: 60,
                     height: 40,
                     child: Card(
-                      child: Icon(Icons.search),
+                      child: Icon(FontAwesomeIcons.facebookMessenger),
                       color: Colors.grey.shade200,
                       elevation: 12,
                       shape: RoundedRectangleBorder(
@@ -101,7 +102,7 @@ class ParteCima extends StatelessWidget {
                   SizedBox(
                     width: 12,
                   ),
-                  Text("Em que  estás a Pensar")
+                  Text("Em que  estás a Pensar?")
                 ],
               ),
               SizedBox(
@@ -119,14 +120,16 @@ class ParteCima extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.video_call),
+                  Icon(Icons.video_camera_front_sharp,
+                  color: Colors.red,
+                  ),
                   Text("Direto     |  "),
                   SizedBox(width: 30,),
                   Icon(Icons.photo_library,color: Colors.green,),
                   Text("Foto  |"),
                   SizedBox(width: 30,),
-                  Icon(Icons.videocam,
-                  color: Colors.red,
+                  Icon(Icons.video_call,
+                  color: Colors.purple,
 
                   
                   ),
