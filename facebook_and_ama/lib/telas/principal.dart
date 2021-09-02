@@ -2,7 +2,6 @@ import 'package:facebook_and_ama/telas/Elementos.dart';
 import 'package:facebook_and_ama/telas/postagens.dart';
 import 'package:facebook_and_ama/telas/segundoElemento.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PrincipalPage extends StatelessWidget {
   const PrincipalPage({Key? key}) : super(key: key);
@@ -187,75 +186,85 @@ class PrincipalPage extends StatelessWidget {
                     width: MediaQuery.of(context).size.width - 16,
                     child: Column(
                       children: [
-                        Column(
-                          children: [ 
-                              
-                                Container(child: Topo(imagem: "imgs/sophia.jpg", perfil: "Adelina Armando", hora: "1h")),
-                                SizedBox(height:5),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [ 
                                 
-                                Container(
-                                  width: MediaQuery.of(context).size.width -16,
-                                  child: textoMeioPub(context: context, Texto: "jhdejhdeddenkdnkendednekdnkednekdkendkendkAproveitadahhhjhdjhejdejdejhdejhded denkdnkendednekdnkednekdkendknnnnnnAproveitadahhhjhdjhejdejdejhdejhden \n dednekdnkednekdkendkendkAprov eitadahhhjhdjhejdejdejhdejhdeddenkdnkeendk")
+                                  Container(child: Topo(imagem: "imgs/sophia.jpg", perfil: "Adelina Armando", hora: "1h")),
+                                  SizedBox(height:5),
                                   
-                                  ),
-                                  //estudar isso
-                                  meiopublicacao(qtdComentarios: "12 Comentarios", qtdLikes: "12", qtdPartilhas: "14 Partilhas"),
-                                
-                                  Divider(),
+                                  Container(
+                                    width: MediaQuery.of(context).size.width -16,
+                                    child: textoMeioPub(context: context, Texto: "  \n dednekdnkednekdkendkendkAprov ")
                                     
-                                  fimPublicacao(),
-                                  
+                                    ),
+                                    //estudar isso
+                                    meiopublicacao(qtdComentarios: "12 Comentarios", qtdLikes: "12", qtdPartilhas: "14 Partilhas"),
+                                  SizedBox(height: 10,),
+                                    Divider(),
+                                      
+                                    fimPublicacao(),
+                                    
                       
+                                
                               
-                            
-                          ],
+                            ],
+                          ),
                         ),
                         //segundaColuna
-                        Column(
-                          children: [ 
-                              
-                                Container(child: Topo(imagem: "imgs/prof.jpeg", perfil: "José Caseiro", hora: "22h")),
-                                SizedBox(height:5),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [ 
                                 
-                                Container(
-                                  width: MediaQuery.of(context).size.width -16,
-                                  child: textoMeioPub(context: context, Texto: "Venha fazer parte do melhor curso de flutter angola")
+                                  Container(child: Topo(imagem: "imgs/prof.jpeg", perfil: "José Caseiro", hora: "22h")),
+                                  SizedBox(height:5),
                                   
-                                  ),
-                                  //estudar isso
-                                  meiopublicacao(qtdComentarios: "24 Comentarios", qtdLikes: "22", qtdPartilhas: "24 Partilhas"),
-                                
-                                  Divider(),
+                                  Container(
+                                    width: MediaQuery.of(context).size.width -16,
+                                    child: textoMeioPub(context: context, Texto: "Venha fazer parte do melhor curso de flutter angola")
                                     
-                                  fimPublicacao(),
+                                    ),
+                                    //estudar isso
+                                    meiopublicacao(qtdComentarios: "24 Comentarios", qtdLikes: "22", qtdPartilhas: "24 Partilhas"),
                                   
+                                    Divider(),
+                                      
+                                    fimPublicacao(),
+                                    
                       
+                                
                               
-                            
-                          ],
+                            ],
+                          ),
                         ),
-                        Column(
-                          children: [ 
-                              
-                                Container(child: Topo(imagem: "imgs/Eu.jpeg", perfil: "Adelina Armando", hora: "12h")),
-                                SizedBox(height:5),
-                                
-                                Container(
-                                  width: MediaQuery.of(context).size.width -16,
-                                  child: textoMeioPub(context: context, Texto: "Pagina criada por Evandro Armando")
-                                  
-                                  ),
-                                  //estudar isso
-                                  meiopublicacao(qtdComentarios: "33 Comentarios", qtdLikes: "100", qtdPartilhas: "3 Partilhas"),
-                                
-                                  Divider(),
-                                    
-                                  fimPublicacao(),
-                                  
-                      
-                              
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
                             
-                          ],
+                            children: [ 
+                                
+                                  Container(child: Topo(imagem: "imgs/Eu.jpeg", perfil: "Adelina Armando", hora: "12h")),
+                                  SizedBox(height:5),
+                                  
+                                  Container(
+                                    width: MediaQuery.of(context).size.width -16,
+                                    child: textoMeioPub(context: context, Texto: "Pagina criada por Evandro Armando")
+                                    
+                                    ),
+                                    //estudar isso
+                                    meiopublicacao(qtdComentarios: "33 Comentarios", qtdLikes: "100", qtdPartilhas: "3 Partilhas"),
+                                  
+                                    Divider(),
+                                      
+                                    fimPublicacao(),
+                                    
+                      
+                                
+                              
+                            ],
+                          ),
                         ),
                         SizedBox(
                           height:12
@@ -326,7 +335,7 @@ class PrincipalPage extends StatelessWidget {
                 Icons.notifications_none_outlined,
                 color: Colors.black,
               ),
-              Text("Em espera")
+              Text("Espera")
             ],
           ),
           label: "Em espera",

@@ -1,5 +1,4 @@
 import 'package:facebook_and_ama/telas/login.dart';
-import 'package:facebook_and_ama/telas/postagens.dart';
 import 'package:facebook_and_ama/telas/principal.dart';
 import 'package:flutter/material.dart';
 
