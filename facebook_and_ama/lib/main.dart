@@ -1,3 +1,4 @@
+import 'package:facebook_and_ama/telas/login.dart';
 import 'package:facebook_and_ama/telas/postagens.dart';
 import 'package:facebook_and_ama/telas/principal.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,16 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PrincipalPage(),
+
+      initialRoute: ":",
+      
+     routes: {
+           "/" :(context) => Login(),
+           "/facebook":(context) => PrincipalPage()
+
+           
+           }
+      
     );
   }
 }
